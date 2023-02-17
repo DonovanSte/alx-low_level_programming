@@ -12,6 +12,7 @@ int main(void)
 {
 	/* prints alphabet in lowercase */
 	char c;
+
 	for (c = 'a'; c <= 'z' ; c++)
 	{
 		putchar(c);
