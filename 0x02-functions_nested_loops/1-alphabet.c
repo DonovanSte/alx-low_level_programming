@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - print alphabet in lowercase followde by new line
+ * print_alphabe - print alphabet in lowercase followde by new line
  *
  * Return: always 0
  */
