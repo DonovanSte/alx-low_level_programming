@@ -3,8 +3,7 @@
 /**
  * print_sign - print the mathmatical sign of a number
  * @n: number input
- *
- * Return: if n > 1(+ & o-1), n = 0(0 & o-0), n < 0(- & o--1 
+ * Return: 1 prints '+' if n > 0, 0 prints '0' if n = 0, -1 prints '-' if n < 0
  */
 int print_sign(int n)
 {
