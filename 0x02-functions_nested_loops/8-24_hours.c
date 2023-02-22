@@ -6,7 +6,6 @@
  * for loop breaks before passing 24:00
  * Return: 24 hour clock line by line
  */
-void jack_bauer(void);
 void jack_bauer(void)
 {
 	int h, m;
