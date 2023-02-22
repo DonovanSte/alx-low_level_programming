@@ -5,7 +5,8 @@
  * print_last_digit - a function that prints the last digit of a number
  * @n: number's last digit result
  * @last_digit: return value
- * Result: value of the las digit
+ *
+ * Result: value of the last digit
  */
 int print_last_digit(int n)
 {
