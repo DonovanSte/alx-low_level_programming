@@ -21,7 +21,7 @@ int main(void)
 		if (i == limit -1)
 			printf("\n");
 		else
-			printf("\n");
+			printf(", ");
 	}
 	return 0;
 }
