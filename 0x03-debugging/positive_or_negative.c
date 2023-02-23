@@ -1,12 +1,8 @@
 #include "main.h"
 
 /**
-* main - Print random positive or negative number
-* identify wheter it is a positve or negative number
-* if the number is greater than 0: is positive
-* if the number is 0: is zero
-* if the number is less than 0: is negative
-* Return: always return 0
+* main - Indicate if the provided number is positive, negative or 0
+* 
 */
 void positive_or_negative(int i)
 {
