@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * _isupper - check the code for Holberton School students.
+ * _isupper - confirm if input is uprecase
  * @c: Character input
- * Return: Always 0.
+ * Return: 1 if Upper, else 0
  */
 int _isupper(int c)
 {
