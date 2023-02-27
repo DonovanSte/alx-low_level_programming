@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- *
- *
- *
+ * puts_half - prints half of the string of numbers from input
+ * @str: input string
+ * Retrun: 0
  */
 void puts_half(char *str)
 {
@@ -12,9 +12,9 @@ void puts_half(char *str)
 	len = 0;
 
 	for (i = 0 ; str[i] != '\0' ; i++)
-		{
-			len++;
-		}
+	{
+		len++;
+	}
 
 	half = (len / 2);
 
