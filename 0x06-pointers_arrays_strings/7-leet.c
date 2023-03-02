@@ -5,33 +5,23 @@
  * @n: input
  * Return: Always 0 (Success)
  */
-char *leet(char *str)
+char *leet(char *n)
 {
-	int i;
+	int i, x;
+	int find[] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
+	int replacer[] = {'4', '3', '0', '7', '1'};
 
-	for (i = 0 ; str[i] != '\0' ; i++)
+	for (i = 0; n[i] != '\0'; i++)
 	{
-		if (str[i] == 'a' || str[i] == 'A')
+		for (x = 0; x <= 9; x++)
 		{
-			str[i] = '4';
-		}
-		else if (str[i] == 'e' || str[i] == 'E')
-		{
-			str[i] = '3';
-		}
-		else if (str[i] == 'o' || str[i] == 'O')
-		{
-			str[i] = '0';
-		}
-		else if (str[i] == 't' || str[i] == 'T')
-		{
-			str[i] = '7';
-		}
-		else if (str[i] == 'l' || str[i] == 'L')
-		{
-			str[i] = '1';
+			if (n[i] == find[x])
+			{
+				n[i] = replacer[x / 2];
+				x = 9;
+			}
 		}
 	}
 
-	return (str);
+	return (n);
 }
