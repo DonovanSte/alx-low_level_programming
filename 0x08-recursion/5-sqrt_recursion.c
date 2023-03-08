@@ -17,7 +17,7 @@ int sqrt_loop(int m, int n)
 }
 
 /**
- * _sqrt_recursion - check the code for Holberton School students.
+ * _sqrt_recursion - returns the natural square root of a number
  * @n: Original value
  * Return: Always 0.
  */
