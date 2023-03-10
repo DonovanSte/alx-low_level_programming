@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * main - Program that takes first two integer 
+ * main - Program that takes first two integer
  * arguments and prints the product
  * @argc: Number of command line arguments
  * @argv: Array name
@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 {
 	int i, j;
 
-	if (argc == 1 || argc == 2)
+	if (argc != 3)
 	{
 		printf("Error\n");
 		return (1);
