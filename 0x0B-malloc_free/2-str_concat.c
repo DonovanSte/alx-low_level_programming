@@ -3,9 +3,11 @@
 #include <stdlib.h>
 
 /**
- * str_concat - check the code for ALX School students.
- * @s1: Input Character
- * Return: Always 0.
+ * str_concat - point to a newly allocated space in memory which contains 
+ * the contents of s1, followed by the contents of s2
+ * @s1: input char 1
+ * @s2: input char 2
+ * Return: Pointer of new allocated space
  */
 char *str_concat(char *s1, char *s2)
 {
