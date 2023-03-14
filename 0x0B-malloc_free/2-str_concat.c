@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * str_concat - point to a newly allocated space in memory which contains 
+ * str_concat - point to a newly allocated space in memory which contains
  * the contents of s1, followed by the contents of s2
  * @s1: input char 1
  * @s2: input char 2
@@ -11,30 +11,31 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-  int i, j, k;
-  char *newStr = NULL;
+	int i, j, k;
+	char *newStr = NULL;
 
-  if (s1 == NULL)
-    s1 = "";
-  if (s2 == NULL)
-    s2 = "";
+	if (s1 == NULL)
+		s1 = "";
 
-  for (i = 0; s1[i] != '\0'; i++)
-    ;
+	if (s2 == NULL)
+		s2 = "";
 
-  for (j = 0; s2[j] != '\0'; j++)
-    ;
+	for (i = 0; s1[i] != '\0'; i++)
+		;
 
-  newStr = (char*)malloc((i + j) * sizeof(char));
+	for (j = 0; s2[j] != '\0'; j++)
+		;
 
-  if (newStr == NULL)
-    return (NULL);
+	newStr = (char *)malloc((i + j) * sizeof(char));
 
-  for (k = 0; s1[k] != '\0'; k++)
-    newStr[k] = s1[k];
+	if (newStr == NULL)
+		return (NULL);
 
-  for (k = 0; s2[k] != '\0'; k++)
-    newStr[k + i] = s2[k];
+	for (k = 0; s1[k] != '\0'; k++)
+		newStr[k] = s1[k];
 
-  return (newStr);
+	for (k = 0; s2[k] != '\0'; k++)
+		newStr[k + i] = s2[k];
+
+	return (newStr);
 }
