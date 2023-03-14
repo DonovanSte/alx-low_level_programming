@@ -1,13 +1,31 @@
-#include <unistd.h>
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
- * _putchar - writes the character c to stdout
- * @c: The character to print
- *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * _strdup - returns a pointer to a newly allocated space in memory
+ * which contains a copy of the string given as a parameter
+ * @str: string
+ * Return: Null if NULL else pointer to duplicated string
  */
-int _putchar(char c)
+char *_strdup(char *str)
 {
-	return (write(1, &c, 1));
+	int i = 0, j, k = 0;
+	char *newStr = NULL;
+
+	while (str[k] != '\0')
+	{
+		i++;
+		k++;
+	}
+
+	newStr = malloc(sizeof(char) * (i + 1));
+
+	if (str == NULL)
+		return (NULL);
+
+	for (j = 0; j <= i; j++)
+		newStr[j] = str[j];
+
+	return (newStr);
 }
