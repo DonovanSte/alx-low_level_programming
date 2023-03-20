@@ -1,4 +1,4 @@
-#ifndef MAIN_H
-#define MAIN_H 1024
+#ifndef SIZE
+#define SIZE 1024
 
-#endif /* MAIN_H */
+#endif /* SIZE */
