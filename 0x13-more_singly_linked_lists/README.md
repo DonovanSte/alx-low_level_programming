@@ -39,4 +39,8 @@ Return: the address of the new element, or NULL if it failed
 3-add_nodeint_end.c
 
 
+4. Free list
 
+Write a function that frees a listint_t list.
+
+Prototype: void free_listint(listint_t *head);
