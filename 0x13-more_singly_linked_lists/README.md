@@ -60,7 +60,8 @@ The function sets the head to NULL
 
 6. Pop
 
-Write a function that deletes the head node of a listint_t linked list, and returns the head node’s data (n).
+Write a function that deletes the head node of a listint_t linked list,
+and returns the head node’s data (n).
 
 Prototype: int pop_listint(listint_t **head);
 if the linked list is empty return 0
@@ -76,3 +77,12 @@ where index is the index of the node, starting at 0
 if the node does not exist, return NULL
 
 7-get_nodeint.c
+
+8. Sum list
+
+Write a function that returns the sum of all the data (n) of a listint_t linked list.
+
+Prototype: int sum_listint(listint_t *head);
+if the list is empty, return 0
+
+8-sum_listint.c
