@@ -31,7 +31,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 
 	/* Traverse the list to find the node at index idx-1 */
 	prev_node = *head;
-	for (i = 0; i < idx -1 && prev_node; i++)
+	for (i = 0; i < idx - 1 && prev_node; i++)
 		prev_node = prev_node->next;
 	if (!prev_node)
 		return (NULL);
