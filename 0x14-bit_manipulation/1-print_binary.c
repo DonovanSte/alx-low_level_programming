@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 
 /**
  * print_binary - Prints the binary representation of a number.
@@ -23,7 +23,7 @@ void print_binary(unsigned long int n)
 			_putchar('0');
 		}
 
-		mask = mask >> 1;
+		mask = >> 1;
 	}
 
 	if (!flag)
