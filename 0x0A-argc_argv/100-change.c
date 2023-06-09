@@ -15,17 +15,17 @@ int main(int argc, char *argv[])
 	int num_coins = sizeof(coins) / sizeof(coins[0]);
 	int count = 0;
 	int i;
-	
+
 	if (argc != 2)
 	{
 		printf("Error\n");
-		return 1;
+		return (1);
 	}
 
 	if (cents < 0)
 	{
 		printf("0\n");
-		return 0;
+		return (0);
 	}
 
 
@@ -40,6 +40,6 @@ int main(int argc, char *argv[])
 	}
 
 	printf("%d\n", count);
-	return 0;
+	return (0);
 }
 
