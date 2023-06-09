@@ -1,43 +1,45 @@
+#include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
-#include <ctype.h>
-#include "main.h"
 
 /**
- * main - Program that takes in all integer arguments and returns the sum
+ * main - Program that calculates the minimum number of coins required
+ *        to give back a specified amount of cents.
  * @argc: Number of command line arguments
- * @argv: Array name
- * Return: 1 if a non-integer is among the passed in arguments, 0 otherwise
+ * @argv: Array of command line arguments
+ * Return: 0 if successful, 1 if there is an error
  */
-
 int main(int argc, char *argv[])
 {
-	int i, j, length, sum;
-	char *ptr;
-
-	if (argc < 2)
-		printf("0\n");
-	else
+	int cents = atoi(argv[1]);
+	int coins[] = {25, 10, 5, 2, 1};
+	int num_coins = sizeof(coins) / sizeof(coins[0]);
+	int count = 0;
+	int i;
+	
+	if (argc != 2)
 	{
-		sum = 0;
-		for (i = 1; i < argc; i++)
-		{
-			ptr = argv[i];
-			length = strlen(ptr);
-
-			for (j = 0; j < length; j++)
-			{
-				if (isdigit(*(ptr + j)) == 0)
-				{
-					printf("Error\n");
-					return (1);
-				}
-			}
-
-			sum += atoi(argv[i]);
-		}
-
-	printf("%d\n", sum);
+		printf("Error\n");
+		return 1;
 	}
-	return (0);
+
+	if (cents < 0)
+	{
+		printf("0\n");
+		return 0;
+	}
+
+
+
+	for (i = 0; i < num_coins; i++)
+	{
+		while (cents >= coins[i])
+		{
+			cents -= coins[i];
+			count++;
+		}
+	}
+
+	printf("%d\n", count);
+	return 0;
 }
+
