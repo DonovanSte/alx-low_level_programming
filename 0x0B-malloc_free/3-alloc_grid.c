@@ -24,14 +24,14 @@ int **alloc_grid(int width, int height)
 		/* Memory allocation failed, return NULL */
 		return (NULL);
 	}
-	
+
 	for (i = 0; i < height; i++)
 	{
 		/* Allocate memory for each row in the grid */
 		grid[i] = (int *)malloc(width * sizeof(int));
 		if (grid[i] == NULL)
 		{
-			/* Memory allocation failed, free previously allocated memory and return NULL */
+			/* Free previously allocated memory and return NULL */
 			for (j = 0; j < i; j++)
 			{
 				free(grid[j]);
