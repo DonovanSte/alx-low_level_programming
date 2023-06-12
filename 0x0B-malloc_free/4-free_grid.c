@@ -10,7 +10,7 @@
 void free_grid(int **grid, int height)
 {
 	int i;
-	
+
 	if (grid == NULL || height <= 0)
 	{
 		/* If grid is NULL or height is invalid, return */
